@@ -32,7 +32,7 @@ const Header = () => {
                 <div className="flex items-center space-x-2 md:space-x-4">
                     <SignedIn>
                         <Link href={"/dashboard"}>
-                            <Button className= "bg-transparent hover:bg-transparent text-white cursor-pointer">
+                            <Button className= "bg-transparent hover:bg-transparent border-[1px] border-slate-600 text-white cursor-pointer">
                                 <LayoutDashboard className="h-4 w-4" />
                                 <span className="hidden md:block">Industry Insights</span>
                             </Button>
@@ -71,7 +71,7 @@ const Header = () => {
 
                     <SignedOut>
                         <SignInButton>
-                            <Button varient="outline"> Sign In</Button>
+                            <Button className="bg-transparent hover:bg-transparent border-[1px] border-slate-600 text-white cursor-pointer"> Sign In</Button>
                         </SignInButton>
                     </SignedOut>
                     <SignedIn>
